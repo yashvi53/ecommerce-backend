@@ -7,7 +7,8 @@ const productRoute = require("./routes/product");
 const client=require("./connection")
 const userRoute = require("./routes/user")
 
-
+var cors = require('cors');
+app.use(cors());
 
 
     app.listen(4000,()=>{
